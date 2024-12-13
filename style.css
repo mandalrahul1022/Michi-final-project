@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color:white;
+    
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #316FF6 ;
+}
+
+header {
+    background-color: #e6f7ff;
+    padding: 10px;
+    color: #316FF6;
+}
+
+h1 {
+    margin: 0;
+}
+
+section {
+    margin: 10px;
+    padding: 10px;
+    background-color:#e6f7ff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#animation-section {
+    text-align: left;
+    background-size: 100%;
+    background-image: url("snow.jpg");
+    height: 500px; 
+    width: 100%; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+}
+
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color:#316FF6 ;
+    border: none;
+    border-radius: 5px;
+    color:#e6f7ff ;
+}
+
+button:hover {
+    background-color: #ff9999;
+
+}
+
+
+#sprite {
+    background-image: url("CatWalkb.jpg");
+    background-repeat: no-repeat;
+    background-size: 290%; 
+    width: 200px; 
+    height: 170px; 
+    position: absolute;
+    top: 500px;
+    left: 10px;
+}
+
+
+.walk.right {
+    animation: walkRight .5s steps(4) infinite; 
+}
+
+
+.walk.left {
+    animation: walkLeft .5s steps(4) infinite;
+}
+
+@keyframes walkRight {
+    from {
+        background-position-x: 0px;
+    }
+    to {
+        background-position-x: -150px; 
+    }
+}
+
+@keyframes walkLeft {
+    from {
+        background-position-x: -1350px; 
+    }
+    to {
+        background-position-x: 0px; 
+    }
+}
+
+
+#cat-container {
+    margin-top: 20px;
+}
+
+#cat-fact {
+    font-size: 18px;
+    color: #333;
+}
+
+#quiz-section {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #e6f7ff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#quiz-section .question {
+    margin: 15px 0;
+}
+
+#quiz-section .question p {
+    font-weight: bold;
+}
+
+#result {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #ffcccb;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#breed-image {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+footer{
+    background-color: #ffcccb;
+}
